@@ -1,0 +1,96 @@
+/* Configurações Gerais */
+.sign-up-form {
+    width: 350px;
+    margin: 5% auto;
+    font-size: 16px;
+    background-color: #f7f9fc;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.sign-up-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.19), 0 8px 8px rgba(0,0,0,0.23);
+}
+
+.sign-up-form h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Campos de Nome */
+.name-fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-fields input {
+    width: 48%;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.name-fields input:focus {
+    border: 1px solid #1877F2;
+    box-shadow: 0 0 5px rgba(24,119,242,0.5);
+}
+
+/* Estilos de Input */
+.sign-up-form input, .sign-up-form select {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.sign-up-form input:focus, .sign-up-form select:focus {
+    border: 1px solid #1877F2;
+    box-shadow: 0 0 5px rgba(24,119,242,0.5);
+}
+
+/* Botão de Enviar */
+.sign-up-form button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #1877F2;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+.sign-up-form button:hover {
+    background-color: #165dbb;
+}
+
+/* Respostas para dispositivos móveis */
+@media (max-width: 768px) {
+    .sign-up-form {
+        width: 90%;
+    }
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sign-up-form {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
